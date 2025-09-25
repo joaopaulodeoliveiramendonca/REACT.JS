@@ -89,7 +89,7 @@ Você pode usar parâmetros dinâmicos nas rotas. Isso é útil quando você pre
 Exemplo de rota dinâmica:
 ```javascript
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, useParams } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Routes, useParams } from 'react-router-dom';
 
 function UserProfile() {
   const { id } = useParams(); // Pega o parâmetro dinâmico da URL
@@ -102,7 +102,9 @@ function App() {
       <nav>
         <Link to="/user/1">Usuário 1</Link> | <Link to="/user/2">Usuário 2</Link>
       </nav>
-      <Route path="/user/:id" component={UserProfile} />
+      <Routes>
+        <Route path="/user/:id" element={<UserProfile />} />
+      </Routes>
     </Router>
   );
 }
@@ -115,3 +117,53 @@ export default App;
 
 ## Exercício: Criando uma Navegação de Páginas
 Crie uma aplicação com múltiplas páginas (ex: Home, About, Contact) usando o React Router. Adicione uma navegação entre as páginas usando o componente `Link` e implemente rotas dinâmicas para exibir detalhes de um item (ex: produto ou post).
+
+```javascript
+import React from 'react';
+import { BrowserRouter as Router, Route, Link, Routes, useParams } from 'react-router-dom';
+
+// Página Home
+function Home() {
+  return <h2>Bem-vindo à Home Page!</h2>;
+}
+
+// Página About
+function About() {
+  return <h2>Sobre nós!</h2>;
+}
+
+// Página Contact
+function Contact() {
+  return <h2>Entre em contato conosco!</h2>;
+}
+
+// Página de Detalhes de Item (Rota Dinâmica)
+function ItemDetails() {
+  const { id } = useParams(); // Pega o parâmetro dinâmico da URL
+  return <h2>Detalhes do Item: {id}</h2>;
+}
+
+function App() {
+  return (
+    <Router>
+      <nav>
+        <Link to="/">Home</Link> | 
+        <Link to="/about">About</Link> | 
+        <Link to="/contact">Contact</Link> | 
+        <Link to="/item/1">Item 1</Link> | 
+        <Link to="/item/2">Item 2</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/item/:id" element={<ItemDetails />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
+```
+
