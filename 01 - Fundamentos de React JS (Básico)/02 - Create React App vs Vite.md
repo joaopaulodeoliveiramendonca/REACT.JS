@@ -1,9 +1,8 @@
-
 # Diferenças entre Create React App (CRA) e Vite
 
 **Create React App (CRA)** e **Vite** são duas ferramentas populares para criar e configurar aplicações em React, mas elas têm diferenças importantes em termos de desempenho e arquitetura. Abaixo, vamos explorar o que cada uma delas é e as principais diferenças entre elas.
 
-## 1. Create React App (CRA)
+## Create React App (CRA)
 
 **Create React App** é uma ferramenta oficial e amplamente utilizada para criar projetos React. Ela fornece uma configuração padrão de build, incluindo Babel, Webpack, ESLint, Jest, e outras ferramentas de desenvolvimento, tudo pronto para uso.
 
@@ -20,7 +19,7 @@
 npx create-react-app nome-do-projeto
 ```
 
-## 2. Vite
+## Vite
 
 **Vite** é uma ferramenta de build de próxima geração criada por Evan You, o criador do Vue.js. Embora Vite tenha sido inicialmente criado para Vue, ele também tem um excelente suporte para React e outras bibliotecas modernas.
 

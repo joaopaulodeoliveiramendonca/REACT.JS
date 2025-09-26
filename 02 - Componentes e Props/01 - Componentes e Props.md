@@ -9,6 +9,15 @@ Os componentes no React são como funções que retornam uma representação da 
 
 No React moderno, usamos principalmente componentes funcionais.
 
+## Template modelo
+
+https://github.com/horizon-ui/horizon-tailwind-react
+
+https://github.com/ashsajal1/react-saas-template
+
+https://github.com/TailAdmin/free-react-tailwind-admin-dashboard
+
+
 ## Props: Passando dados entre componentes
 Props são propriedades que você passa de um componente pai para um componente filho. Elas permitem que você compartilhe dados entre componentes.
 

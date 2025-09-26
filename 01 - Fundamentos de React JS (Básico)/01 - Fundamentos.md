@@ -1,10 +1,9 @@
-
 # Fundamentos de React JS (Básico)
 
-## Semana 1: Introdução ao React e Configuração do Ambiente
+## Introdução ao React e Configuração do Ambiente
 
 ### O que é o React?
-O React é uma biblioteca JavaScript para construir interfaces de usuário, especialmente voltadas para aplicações web de página única (SPAs). Ele permite criar componentes reutilizáveis que atualizam de forma eficiente a interface ao interagir com dados dinâmicos.
+O React é uma biblioteca JavaScript para construir interfaces de usuário, especialmente voltadas para aplicações web de página única SPAs (Single-Page Application ou Aplicação de Página Única). Ele permite criar componentes reutilizáveis que atualizam de forma eficiente a interface ao interagir com dados dinâmicos.
 
 ### Como instalar e configurar o React
 Existem várias maneiras de iniciar um projeto React. O mais comum é usar o Create React App ou Vite, que configuram automaticamente o ambiente de desenvolvimento.
@@ -43,6 +42,7 @@ NPX (Node Package eXecute) é uma ferramenta que vem com o npm e permite executa
 
 ### Estrutura básica de uma aplicação React
 Após a criação do projeto, você verá a estrutura de diretórios como:
+
 ```
 public/
   index.html
@@ -51,6 +51,7 @@ src/
   index.js
   styles.css
 ```
+
 - `public/index.html`: O arquivo HTML base onde o React será montado.
 - `src/index.js`: O ponto de entrada do JavaScript, onde o React renderiza a aplicação no HTML.
 - `src/App.js`: O componente principal, onde você começa a construir a interface do usuário.
